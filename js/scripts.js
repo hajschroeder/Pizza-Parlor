@@ -6,6 +6,7 @@ function Pizza(size, toppings){
 
 Pizza.prototype.pizzaPrice = function(){
   total = 0;
+  let toppingPrice = this.toppings.length
   if (this.size === "small"){
     total+=10;
   } else if  (this.size === "medium"){
@@ -13,7 +14,7 @@ Pizza.prototype.pizzaPrice = function(){
   } else if (this.size === "large"){
     total +=15;
   }
-  return total;
+  return total+= toppingPrice;
 }
 
 let firstPizza = new Pizza("small", ["pep", "mush"])
