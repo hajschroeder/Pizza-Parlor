@@ -5,8 +5,24 @@ function Pizza(size, toppings){
 }
 
 Pizza.prototype.pizzaPrice = function(){
-  
+  total = 0;
+  if (this.size === "small"){
+    total+=10;
+  } else if  (this.size === "medium"){
+    total+=13;
+  } else if (this.size === "large"){
+    total +=15;
+  }
+  return total;
 }
+
+let firstPizza = new Pizza("small", ["pep", "mush"])
+let secondPizza = new Pizza("medium", ["whatever", "placeholder", "doesn't matter"])
+let thirdPizza = new Pizza("large", ["topping1", "topping2", "topping3", "topping4"])
+console.log(firstPizza.pizzaPrice());
+console.log(secondPizza.pizzaPrice());
+console.log(thirdPizza.pizzaPrice());
+
 // Pizza.prototype.pizzaPrice = function(){
 //   let total = 0
 //   let small= {

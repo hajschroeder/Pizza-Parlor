@@ -24,5 +24,12 @@ TEST 3.)
 
 1. TEST: It should assign a value to the size
 1. CODE: let firstPizza =  new Pizza("small", ["topping1", "topping2"], 0)
-1. EXPECTED OUTCOME: firstPizza //10
+1. EXPECTED OUTCOME: firstPizza.pizzaPrice() //10
+_TEST STATUS: Passing_
+
+TEST 4.)
+
+1. TEST: It should add the toppings to the value
+1. CODE: firstPizza = new Pizza(///)
+1. EXPECTED OUTCOME firstPizza.pizzaPrice(12)
 _TEST STATUS: Not Passing_
