@@ -32,4 +32,4 @@ TEST 4.)
 1. TEST: It should add the toppings to the value
 1. CODE: firstPizza = new Pizza(///)
 1. EXPECTED OUTCOME firstPizza.pizzaPrice(12)
-_TEST STATUS: Not Passing_
+_TEST STATUS: Passing_
