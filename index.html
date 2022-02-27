@@ -13,32 +13,58 @@
 <body>
   <div class="container">
     <h1>Welcome to Pizza Show</h1>
-    <h4>Great show, bring family</h4>
+    <h4>Great show, bring a family</h4>
     <h2>Please choose pizza</h2>
     <br>
     <form id="form-one">
       <h1>Size Your Pizza</h1>
       <select class="form-control" id="size">
-        <option value="small">Small</option>
-        <option value="medium">Medium</option>
-        <option value="large">Large</option>
+        <option value="small">Small --$10</option>
+        <option value="medium">Medium --$13</option>
+        <option value="large">Large --$15</option>
       </select>
       <br>
-      <fieldset>
+      <fieldset id="boxes">
         <h1>Top Your Pizza</h1>
+        <h4>$1 each</h4>
         <input type="checkbox" name="toppings" value="pepperoni">
-        <label for="pepperoni">Pepperponi</label>
+        <label for="pepperoni">Pepperoni</label>
+        <br>
         <input type="checkbox" name="toppings" value="mushrooms">
         <label for="mushrooms">Mushrooms</label>
+        <br>
         <input type="checkbox" name="toppings" value="olves">
         <label for="olives">Olives</label>
+        <br>
+        <input type="checkbox" name="toppings" value="pepper">
+        <label for="pepper">Roasted Pepper</label>
+        <br>
+        <input type="checkbox" name="toppings" value="sausage">
+        <label for="sausage">Sausage</label>
+        <br>
+        <input type="checkbox" name="toppings" value="pineapple">
+        <label for="pineapple">Pineapple</label>
+        <br>
+        <input type="checkbox" name="toppings" value="jalapeno">
+        <label for="jalapeno">Jalapeno</label>
+        <br>
+        <input type="checkbox" name="toppings" value="tomato">
+        <label for="tomato">Tomato</label>
+        <br>
+        <input type="checkbox" name="toppings" value="anchovies">
+        <label for="anchovies">Anchovies</label>
+        <br>
+        <input type="checkbox" name="toppings" value="arugula">
+        <label for="arugula">Arugula</label>
+        <br>
+        <input type="checkbox" name="toppings" value="extra-cheese">
+        <label for="extra-cheese">Extra Cheese </label>
       </fieldset>
 
       <button type="submit" class="btn-danger">How much is your pizza?</button>
-      </form>
-      <div id="cost"></div>
+    </form>
+    <div id="cost"></div>
 
   </div>
-  
 </body>
 </html>
